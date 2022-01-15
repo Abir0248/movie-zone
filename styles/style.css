@@ -5,19 +5,20 @@ body {
   font-family: "Roboto", sans-serif;
   margin-left: 100px;
   margin-right: 100px;
+  background-color: #ffffff;
 }
 h1 {
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 700;
   color: #03203c;
 }
 h2 {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
 }
 h3 {
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 300;
 }
 /* first-section */
 
@@ -46,13 +47,54 @@ h3 {
   max-width: 150px;
   max-height: 25px;
 }
-i {
+.heading i {
   padding-left: 20px;
 }
 .poster img {
-  width: %;
+  width: 75%;
 }
 
-.logos hr {
-  border: 2px solid #03203c;
+.logos-sec hr {
+  border: 1px solid #03203ca6;
+}
+.logos {
+  display: grid;
+  grid-template-columns: repeat(4, 0.7fr);
+  justify-items: center;
+}
+.logo {
+}
+.logos .logo img {
+  max-height: 100px;
+  /* max-width: 100%; */
+}
+/* movies */
+
+.second > h2 {
+  color: #03203c;
+  text-align: center;
+}
+.movies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.movie {
+  max-width: 400px;
+  max-height: 800px;
+  background-color: #f0f3f7;
+  padding: 5%;
+  /* margin: 25px; */
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movie img {
+  max-width: 350px;
+  border-radius: 25px;
+}
+.movie article {
+  color: rgb(110, 110, 110);
 }
