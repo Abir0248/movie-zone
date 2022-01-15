@@ -1,0 +1,16 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto:wght@300;500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin-left: 100px;
+}
+.first-section {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.first-section img {
+  width: 40%;
+}
