@@ -1,5 +1,5 @@
 /* font */
-@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;500&display=swap");
 
 body {
   font-family: "Roboto", sans-serif;
@@ -24,14 +24,16 @@ h3 {
 
 .first-section,
 .last-section {
-  display: flex;
-  padding: 10x 30px;
-  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+  /* padding: 10x 10x; */
+  margin: 50px 0px;
 }
-.half-width {
+/* .half-width {
   width: 50%;
   padding: 5%;
-}
+} */
 .heading {
   display: flex;
   flex-direction: column;
@@ -51,9 +53,9 @@ h3 {
 .heading i {
   padding-left: 20px;
 }
-.poster img {
+/* .poster img {
   width: 75%;
-}
+} */
 
 .logos-sec hr {
   border: 1px solid #03203ca6;
@@ -112,14 +114,58 @@ h3 {
   max-width: 150px;
   max-height: 25px;
 }
-.second p {
+#see {
   text-align: right;
+  margin-top: 20px;
 }
-.second p a {
+.second #see a {
   text-decoration: none;
   color: #03203c;
 }
 
-.second p i {
+.second #see i {
   padding-left: 10px;
+}
+footer {
+  text-align: center;
+  color: aliceblue;
+  background-color: #03203c;
+  padding: 20px;
+  font-family: "lobster";
+}
+footer h2 {
+  color: aliceblue;
+  font-size: 25px;
+}
+footer div a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0 10px;
+}
+/* media quearies */
+/* mobile devices */
+@media only screen and (max-width: 688px) {
+  body {
+    margin: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .first-section {
+    /* background-color: aqua; */
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .first-section img {
+    order: 1;
+  }
+  .first-section .heading {
+    order: 2;
+  }
+  .movies {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .movie {
+    justify-content: center;
+    flex-direction: column;
+  }
 }
