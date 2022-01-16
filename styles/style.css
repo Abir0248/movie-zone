@@ -3,8 +3,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
   background-color: #ffffff;
 }
 h1 {
@@ -22,7 +22,8 @@ h3 {
 }
 /* first-section */
 
-.first-section {
+.first-section,
+.last-section {
   display: flex;
   padding: 10x 30px;
   margin-bottom: 10px;
@@ -62,8 +63,7 @@ h3 {
   grid-template-columns: repeat(4, 0.7fr);
   justify-items: center;
 }
-.logo {
-}
+
 .logos .logo img {
   max-height: 100px;
   /* max-width: 100%; */
@@ -80,8 +80,6 @@ h3 {
   grid-gap: 20px;
 }
 .movie {
-  max-width: 400px;
-  max-height: 800px;
   background-color: #f0f3f7;
   padding: 5%;
   /* margin: 25px; */
@@ -91,10 +89,37 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+
 .movie img {
   max-width: 350px;
   border-radius: 25px;
 }
+.movies i {
+  color: goldenrod;
+}
+
 .movie article {
   color: rgb(110, 110, 110);
+  margin-bottom: 15px;
+}
+
+.m-btn {
+  text-decoration: none;
+  background-color: #03203c;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: aliceblue;
+  max-width: 150px;
+  max-height: 25px;
+}
+.second p {
+  text-align: right;
+}
+.second p a {
+  text-decoration: none;
+  color: #03203c;
+}
+
+.second p i {
+  padding-left: 10px;
 }
