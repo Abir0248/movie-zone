@@ -3,9 +3,10 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 50px;
+  /* margin-right: 150px; */
   background-color: #ffffff;
+  /* align-self: center; */
 }
 h1 {
   font-size: 50px;
@@ -34,14 +35,17 @@ h3 {
   width: 50%;
   padding: 5%;
 } */
-.heading {
+.heading,
+.last {
   display: flex;
   flex-direction: column;
 }
-.heading p {
+.heading p,
+.last p {
   color: #03203c;
 }
-.heading a {
+.heading a,
+.last a {
   text-decoration: none;
   background-color: #03203c;
   padding: 10px 30px;
@@ -63,11 +67,12 @@ h3 {
 .logos {
   display: grid;
   grid-template-columns: repeat(4, 0.7fr);
-  justify-items: center;
+  /* justify-self: center; */
+  align-items: center;
 }
 
 .logos .logo img {
-  max-height: 100px;
+  width: 50%;
   /* max-width: 100%; */
 }
 /* movies */
@@ -126,6 +131,12 @@ h3 {
 .second #see i {
   padding-left: 10px;
 }
+.last-section img {
+  width: 100%;
+}
+.last i {
+  padding-left: 50px;
+}
 footer {
   text-align: center;
   color: aliceblue;
@@ -146,10 +157,14 @@ footer div a {
 /* mobile devices */
 @media only screen and (max-width: 688px) {
   body {
-    margin: none;
+    width: 80%;
+    align-self: center;
   }
   h1 {
     font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
   }
   .first-section {
     /* background-color: aqua; */
@@ -157,6 +172,7 @@ footer div a {
   }
   .first-section img {
     order: 1;
+    width: 100%;
   }
   .first-section .heading {
     order: 2;
@@ -167,5 +183,62 @@ footer div a {
   .movie {
     justify-content: center;
     flex-direction: column;
+    width: ;
+  }
+  .last-section {
+    /* background-color: aqua; */
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .last-section img {
+    order: 1;
+    width: 100%;
+  }
+  .last-section .heading {
+    order: 2;
+  }
+  footer {
+    width: 100%;
+  }
+}
+/* tablet device */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  body {
+    width: auto;
+    margin-right: 25px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .first-section {
+    /* background-color: aqua; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .first-section img {
+    width: 100%;
+  }
+  .movies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .movie {
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+  }
+  .last-section {
+    /* background-color: aqua; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .last-section img {
+    width: 100%;
+  }
+  /* .last-section .heading {
+    
+  } */
+  footer {
+    width: 100%;
   }
 }
