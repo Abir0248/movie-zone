@@ -132,7 +132,7 @@ h3 {
   padding-left: 10px;
 }
 .last-section img {
-  width: 100%;
+  width: 90%;
 }
 .last i {
   padding-left: 50px;
@@ -172,7 +172,7 @@ footer div a {
   }
   .first-section img {
     order: 1;
-    width: 100%;
+    width: 90%;
   }
   .first-section .heading {
     order: 2;
@@ -191,7 +191,7 @@ footer div a {
   }
   .last-section img {
     order: 1;
-    width: 100%;
+    width: 90%;
   }
   .last-section .heading {
     order: 2;

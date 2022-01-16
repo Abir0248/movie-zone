@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;500&display=swap");
+header {
+  font-family: "Roboto", sans-serif;
+
+  /* margin-right: 150px; */
+  background-color: #ffffff;
+  /* align-self: center; */
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
+  margin-right: 70px;
+}
+nav a {
+  text-decoration: none;
+  color: #03203c;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+nav p {
+  font-size: 0.9em;
+}
+.nav-bar ul {
+  list-style: none;
+}
+
+.nav2 {
+  text-align: right;
+}
